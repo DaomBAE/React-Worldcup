@@ -66,5 +66,6 @@ const Worldcup = () => {
 };
 
 export default Worldcup;
-      // 로딩중 삼항연산자로 표현 했을 때 but 지금은 랜덤 사진이 천천히 돌아가야헤서 안씀 
-      // {shuffleAnimal ? <AnimalCard animal={shuffleAnimal[0]} /> : "값이없음"
+
+      // 로딩중 삼항연산자와 && 표현 한 이유 "초기값이없기 때문에 렌더링이 안됨"  but 지금은 랜덤 사진이 천천히 돌아가야헤서 안씀 
+      // {shuffleAnimal ? <AnimalCard animal={shuffleAnimal[0]} /> 
