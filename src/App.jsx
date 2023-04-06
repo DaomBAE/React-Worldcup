@@ -1,7 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./pages/main";
+import Worldcup from "./pages/worldcup";
+
 function App() {
   return (
-    <div>code</div>
-     
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/worldcup" element={<Worldcup />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
